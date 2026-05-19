@@ -2,7 +2,7 @@
   "app_name": "Marketing Team Hub",
   "agents": {
     "content_writer": {
-      "agent_id": "6991e141197e042c402253be",
+      "agent_id": "6a0c32dbbc1375993a29eeb5",
       "name": "Content Writer Agent",
       "type": "sub-agent",
       "model": "gpt-4.1",
@@ -10,7 +10,7 @@
       "capabilities": ["text"]
     },
     "seo_analyzer": {
-      "agent_id": "6991e14183535abf424bf43e",
+      "agent_id": "6a0c32db4466af4162bc22cc",
       "name": "SEO Analyzer Agent",
       "type": "sub-agent",
       "model": "claude-sonnet-4-5",
@@ -18,7 +18,7 @@
       "capabilities": ["text"]
     },
     "graphics_generator": {
-      "agent_id": "6991e1426a46d7921f7bf5a4",
+      "agent_id": "6a0c32db806ba6db8e676014",
       "name": "Graphics Generator Agent",
       "type": "sub-agent",
       "model": "gpt-4.1",
@@ -29,26 +29,26 @@
       }
     },
     "marketing_coordinator": {
-      "agent_id": "6991e15a83535abf424bf440",
+      "agent_id": "6a0c32dcbc1375993a29eeb7",
       "name": "Marketing Coordinator",
       "type": "manager",
       "model": "gpt-4.1",
       "provider": "openai",
       "capabilities": ["text"],
       "managed_agents": [
-        "6991e141197e042c402253be",
-        "6991e14183535abf424bf43e",
-        "6991e1426a46d7921f7bf5a4"
+        "6a0c32dbbc1375993a29eeb5",
+        "6a0c32db4466af4162bc22cc",
+        "6a0c32db806ba6db8e676014"
       ]
     }
   },
   "agent_ids": {
-    "content_writer_id": "6991e141197e042c402253be",
-    "seo_analyzer_id": "6991e14183535abf424bf43e",
-    "graphics_generator_id": "6991e1426a46d7921f7bf5a4",
-    "marketing_coordinator_id": "6991e15a83535abf424bf440"
+    "content_writer_id": "6a0c32dbbc1375993a29eeb5",
+    "seo_analyzer_id": "6a0c32db4466af4162bc22cc",
+    "graphics_generator_id": "6a0c32db806ba6db8e676014",
+    "marketing_coordinator_id": "6a0c32dcbc1375993a29eeb7"
   },
-  "primary_agent_id": "6991e15a83535abf424bf440",
+  "primary_agent_id": "6a0c32dcbc1375993a29eeb7",
   "workflow_pattern": "manager-subagent",
   "created_at": "2026-02-15"
 }

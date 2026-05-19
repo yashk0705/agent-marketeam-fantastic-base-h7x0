@@ -1,6 +1,6 @@
 {
   "agent_name": "Marketing Coordinator",
-  "agent_id": "6991e15a83535abf424bf440",
+  "agent_id": "6a0c32dcbc1375993a29eeb7",
   "description": "Orchestrates content creation workflow, routes briefs to specialized agents, and aggregates final marketing package with written content, SEO recommendations, and graphics",
   "agent_type": "json",
   "accessor": "result",

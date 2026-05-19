@@ -16,14 +16,14 @@ import {
 // Constants
 // ---------------------------------------------------------------------------
 
-const MARKETING_COORDINATOR_ID = '6991e15a83535abf424bf440'
-const GRAPHICS_GENERATOR_ID = '6991e1426a46d7921f7bf5a4'
+const MARKETING_COORDINATOR_ID = '6a0c32dcbc1375993a29eeb7'
+const GRAPHICS_GENERATOR_ID = '6a0c32db806ba6db8e676014'
 
 const AGENTS = [
-  { id: '6991e15a83535abf424bf440', name: 'Marketing Coordinator', role: 'Orchestrates the full pipeline' },
-  { id: '6991e141197e042c402253be', name: 'Content Writer', role: 'Drafts written content' },
-  { id: '6991e14183535abf424bf43e', name: 'SEO Analyzer', role: 'Evaluates SEO quality' },
-  { id: '6991e1426a46d7921f7bf5a4', name: 'Graphics Generator', role: 'Creates visual assets' },
+  { id: '6a0c32dcbc1375993a29eeb7', name: 'Marketing Coordinator', role: 'Orchestrates the full pipeline' },
+  { id: '6a0c32dbbc1375993a29eeb5', name: 'Content Writer', role: 'Drafts written content' },
+  { id: '6a0c32db4466af4162bc22cc', name: 'SEO Analyzer', role: 'Evaluates SEO quality' },
+  { id: '6a0c32db806ba6db8e676014', name: 'Graphics Generator', role: 'Creates visual assets' },
 ]
 
 const CONTENT_TYPES = ['Blog Post', 'Social Media', 'Ad Copy', 'Email']
