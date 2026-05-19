@@ -62,85 +62,126 @@ export default function Error({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#f9fafb',
+        backgroundColor: '#000000',
         fontFamily: 'system-ui, -apple-system, sans-serif',
         padding: '24px',
       }}
     >
       <div
         style={{
-          maxWidth: '480px',
+          maxWidth: '600px',
           width: '100%',
-          backgroundColor: '#ffffff',
-          borderRadius: '12px',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
-          overflow: 'hidden',
+          textAlign: 'center',
         }}
       >
-        {/* Header */}
-        <div
+        {/* Error heading */}
+        <h1
           style={{
-            backgroundColor: '#ef4444',
-            color: '#ffffff',
-            padding: '16px 24px',
-            fontSize: '16px',
-            fontWeight: 600,
+            fontSize: '28px',
+            fontWeight: 700,
+            color: '#ff6b6b',
+            marginBottom: '16px',
           }}
         >
           Something went wrong
-        </div>
+        </h1>
 
-        {/* Body */}
-        <div style={{ padding: '24px' }}>
+        {/* Error message box */}
+        <div
+          style={{
+            backgroundColor: '#1a1a1a',
+            padding: '16px',
+            borderRadius: '8px',
+            marginBottom: '24px',
+          }}
+        >
           <p
             style={{
-              margin: '0 0 16px',
-              fontSize: '14px',
-              color: '#374151',
+              margin: '0',
+              fontSize: '13px',
+              color: '#888888',
               fontFamily: 'monospace',
-              backgroundColor: '#f3f4f6',
-              padding: '12px',
-              borderRadius: '8px',
               wordBreak: 'break-word',
+              lineHeight: '1.6',
             }}
           >
             {error.message}
           </p>
+        </div>
 
-          <div style={{ display: 'flex', gap: '12px' }}>
-            <button
-              onClick={reset}
-              style={{
-                flex: 1,
-                padding: '10px 20px',
-                fontSize: '14px',
-                fontWeight: 500,
-                color: '#ffffff',
-                backgroundColor: '#3b82f6',
-                border: 'none',
-                borderRadius: '8px',
-                cursor: 'pointer',
-              }}
-            >
-              Try again
-            </button>
-            <button
-              onClick={() => window.location.reload()}
-              style={{
-                flex: 1,
-                padding: '10px 20px',
-                fontSize: '14px',
-                fontWeight: 500,
-                color: '#374151',
-                backgroundColor: '#ffffff',
-                border: '1px solid #d1d5db',
-                borderRadius: '8px',
-                cursor: 'pointer',
-              }}
-            >
-              Reload page
-            </button>
-          </div>
+        {/* Help text */}
+        <p
+          style={{
+            fontSize: '14px',
+            color: '#ffffff',
+            marginBottom: '24px',
+          }}
+        >
+          An unexpected error occurred. Please try refreshing the page or contact support if the problem persists.
+        </p>
+
+        {/* Action buttons */}
+        <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <button
+            onClick={reset}
+            style={{
+              padding: '12px 24px',
+              fontSize: '14px',
+              fontWeight: 500,
+              color: '#000000',
+              backgroundColor: '#ff9500',
+              border: 'none',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              transition: 'all 0.2s',
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.backgroundColor = '#ffaa33'
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = '#ff9500'
+            }}
+          >
+            Try again →
+          </button>
+          <button
+            onClick={() => window.location.reload()}
+            style={{
+              padding: '12px 24px',
+              fontSize: '14px',
+              fontWeight: 500,
+              color: '#ffffff',
+              backgroundColor: 'transparent',
+              border: '1px solid #333333',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              transition: 'all 0.2s',
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.borderColor = '#666666'
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.borderColor = '#333333'
+            }}
+          >
+            Reload page
+          </button>
+        </div>
+
+        {/* Decorative star icon in corner */}
+        <div
+          style={{
+            position: 'fixed',
+            top: '24px',
+            right: '24px',
+            width: '24px',
+            height: '24px',
+            opacity: 0.3,
+          }}
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="#ff9500" strokeWidth="2">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
         </div>
       </div>
     </div>
